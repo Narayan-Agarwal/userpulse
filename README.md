@@ -81,7 +81,7 @@ mkdir -p .streamlit
 alembic upgrade head
 python simulation/seed.py
 python ml/train.py
-streamlit run streamlit_app/app.py
+streamlit run streamlit_app.py
 ```
 Note: `DATABASE_URL` comes from the cloud PostgreSQL provider dashboard — no local DB needed.
 

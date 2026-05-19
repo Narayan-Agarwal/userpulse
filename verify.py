@@ -104,7 +104,7 @@ def check_insights():
     return True
 
 def check_streamlit():
-    proc = subprocess.Popen([r"venv\\Scripts\\streamlit.exe", "run", "streamlit_app/app.py", "--server.headless=true"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    proc = subprocess.Popen([r"venv\\Scripts\\streamlit.exe", "run", "streamlit_app.py", "--server.headless=true"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     for _ in range(15):
         time.sleep(2)
         try:
@@ -166,7 +166,7 @@ def main():
         print("To deploy to Streamlit Cloud:")
         print("1. Push this repo to GitHub (your .env and secrets.toml are gitignored)")
         print("2. Go to share.streamlit.io → New app → select this repo")
-        print("3. Main file path: streamlit_app/app.py")
+        print("3. Main file path: streamlit_app.py")
         print("4. Settings → Secrets → paste your DATABASE_URL")
         print("5. Click Deploy")
         print("============================================================")
