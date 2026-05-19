@@ -1,0 +1,28 @@
+# Environment files — NEVER commit these
+.env
+.env.local
+.env.*.local
+
+# Streamlit secrets — NEVER commit
+.streamlit/secrets.toml
+
+# ML model artifacts
+ml/churn_model.pkl
+ml/churn_model_features.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+.env.example
